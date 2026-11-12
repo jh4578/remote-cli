@@ -3,7 +3,7 @@ set -euo pipefail
 
 VERSION=0.1.7
 PACKAGE="Remote-CLI-${VERSION}-macOS-arm64.pkg"
-SHA256=27ce7b812207e8ad1269e7d44b31887b26e363d55d2f876f9d463784ae16a2a4
+SHA256=7eca79cc4698212ea9d69f082531b2b3288c3fd05f143de2a4d84e0bda6b1111
 BASE="https://github.com/jh4578/remote-cli/releases/download/v${VERSION}"
 
 if [[ "$(uname -s)" != Darwin || "$(uname -m)" != arm64 ]]; then
