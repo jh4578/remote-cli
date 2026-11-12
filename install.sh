@@ -55,6 +55,8 @@ fi
 export PATH="$HOME/.local/bin:$PATH"
 echo 'Installing Sieve. macOS will ask for administrator authorization.'
 echo 'This development package is not Apple Developer ID signed or notarized.'
+# The terminal is intentionally opened as the invoking user, not as root.
+# shellcheck disable=SC2024
 sudo /usr/sbin/installer -pkg "$WORK/$PACKAGE" -target / </dev/tty
 echo 'Set up this Mac. Paste your private activation code when requested.'
 /usr/local/bin/sieve setup </dev/tty
