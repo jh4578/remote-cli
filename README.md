@@ -1,13 +1,13 @@
-# Sieve CLI downloads
+# Remote CLI downloads
 
-Connect the official local Claude Code CLI to your existing Sieve AWS backend.
+Connect the official local Claude Code CLI to your existing AWS backend.
 
 ## Install — Apple Silicon Mac
 
 Open Terminal and paste:
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/jh4578/sieve-cli/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/jh4578/remote-cli/main/install.sh | bash
 ```
 
 Allow the macOS installer, then paste your private activation code when asked.
@@ -22,14 +22,14 @@ the existing backend are required. Public download does not grant backend access
 
 ## Direct download
 
-[Download Sieve CLI 0.1.6](https://github.com/jh4578/sieve-cli/releases/download/v0.1.6/Sieve-CLI-0.1.6-macOS-arm64.pkg)
+[Download Remote CLI 0.1.7](https://github.com/jh4578/remote-cli/releases/download/v0.1.7/Remote-CLI-0.1.7-macOS-arm64.pkg)
 
-After installing the official Claude Code CLI and this package, run `sieve setup`.
+After installing the official Claude Code CLI and this package, run `remote-cli setup`.
 
 To inspect the script before running it:
 
 ```sh
-curl -fsSLo install.sh https://raw.githubusercontent.com/jh4578/sieve-cli/main/install.sh
+curl -fsSLo install.sh https://raw.githubusercontent.com/jh4578/remote-cli/main/install.sh
 less install.sh
 bash install.sh
 ```
